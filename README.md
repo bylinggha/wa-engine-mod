@@ -11,6 +11,9 @@ Repo ini berisi dua bagian:
 | `engine/` | Server engine (Node.js, ES module): HTTP API, WebSocket, pengelola sesi, antrean kirim, webhook |
 | `lib/byee-wamod/` | Custom library WhatsApp — fork Baileys dengan tambalan lokal (pesan interaktif, kunci waktu, stabilitas) |
 
+**📘 Tutorial lengkap — menyambungkan WhatsApp (kode pairing / QR), kirim pesan, webhook ACK, logout:
+[`docs/TUTORIAL.md`](docs/TUTORIAL.md)**
+
 ## Persyaratan
 
 - Node.js 20 atau lebih baru
