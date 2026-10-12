@@ -1,0 +1,41 @@
+{
+    "name": "wa-engine-mod",
+    "version": "1.0.0",
+    "description": "Engine WhatsApp multi-sesi (HTTP + WebSocket) berbasis Baileys dengan custom lib byee-wamod",
+    "private": true,
+    "type": "module",
+    "main": "engine/index.js",
+    "scripts": {
+        "start": "node engine/index.js",
+        "hub": "node engine/baileys-ws-hub.js",
+        "control": "node engine/control-api.js",
+        "check": "for f in engine/*.js engine/config/*.js; do node --check \"$f\" || exit 1; done"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "dependencies": {
+        "@cacheable/node-cache": "^1.4.0",
+        "@hapi/boom": "^10.0.1",
+        "@whiskeysockets/baileys": "7.0.0-rc13",
+        "axios": "^1.12.2",
+        "bail-lite": "github:Lord-Samuel/Bail-lite",
+        "byee-wamod": "file:./lib/byee-wamod",
+        "cheerio": "^1.1.2",
+        "compression": "^1.8.1",
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0",
+        "jimp": "^0.16.13",
+        "mysql2": "^3.15.3",
+        "node-cache": "^5.1.2",
+        "p-queue": "^9.0.1",
+        "pino": "^9.11.0",
+        "qrcode": "^1.5.4",
+        "qrcode-terminal": "^0.12.0",
+        "redis": "^5.9.0",
+        "sharp": "^0.34.5",
+        "sqlite3": "^5.1.7",
+        "uuid": "^13.0.0",
+        "ws": "^8.18.0"
+    }
+}
